@@ -1,6 +1,5 @@
 package com.tns.M15;
 
-import myDay1.StaticVariable;
 
 public class StaticVar {
 	int id;
