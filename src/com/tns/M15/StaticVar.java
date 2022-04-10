@@ -22,8 +22,9 @@ public void display()
 		StaticVar s1=new StaticVar(1,"Sayyed");
 		s1.display();
 		StaticVar s2= new StaticVar(2,"Aman");
-		System.out.println("After Changing the Class variable / Static Variable Value..");
+		s2.display();
 		StaticVar.college="Jamia";
+		System.out.println("After Changing the Class variable / Static Variable Value..");
 		s1.display();
 		s2.display();
 	}
