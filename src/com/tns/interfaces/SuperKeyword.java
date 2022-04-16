@@ -10,6 +10,7 @@ abstract class C{
 public class SuperKeyword extends C{
 public void display()
 {
+	super.display();
 	
 	System.out.println("Same Display Methods is OverRiden...");
 }
