@@ -1,22 +1,27 @@
 package com.tns.stringClass;
 
 public class DecimalToBianry {
-	static int bin(int a)
+	static void bin(int a)
 	{
-		int n=0;
-		if(a==0 || a==1)
-		return 1;
-		else {
-			n=a%2;
-			a/=2;
+		
+		if(a==1)
+		{
+			System.out.print(1);
 		}
-		n=bin(a-1);
-		return n;
+		else {
+			bin(a/2);                           // 7, 3, 1
+			                                    // 1 1 10
+			
+			System.out.print(a%2); 
+			
+		}
+		
 		
 	}
 
 	public static void main(String[] args) {
-System.out.println("Binary of 14 is "+bin(14));
+System.out.println("Binary of 14 is ");
+bin(14);
 	}
 
 }
